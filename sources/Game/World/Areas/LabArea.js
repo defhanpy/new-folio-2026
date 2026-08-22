@@ -9,6 +9,7 @@ import { remapClamp, safeMod, signedModDelta } from '../../utilities/maths.js'
 import { Inputs } from '../../Inputs/Inputs.js'
 import { MeshDefaultMaterial } from '../../Materials/MeshDefaultMaterial.js'
 import { Area } from './Area.js'
+import { getCurrentLanguage, translations } from '../../../i18n/LanguageToggle.js'
 
 export class LabArea extends Area
 {
@@ -723,7 +724,7 @@ export class LabArea extends Area
 
                 gsap.to(this.url.inner.rotation, { x: Math.PI * 2 * rotationDirection, duration: 1, delay: 0, ease: 'back.out(2)', overwrite: true })
 
-                const displayUrl = this.navigation.current.urlDisplay || (this.navigation.current.url === '#' ? 'Verified Certificate' : this.navigation.current.url.replace(/https?:\/\//, ''))
+                const displayUrl = this.navigation.current.urlDisplay || (this.navigation.current.url === '#' ? (translations[getCurrentLanguage()]?.lab_verified || 'Verified Certificate') : this.navigation.current.url.replace(/https?:\/\//, ''))
                 this.url.textCanvas.updateText(displayUrl)
 
                 const ratio = this.url.textCanvas.getMeasure().width / this.texts.density

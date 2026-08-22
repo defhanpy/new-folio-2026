@@ -89,7 +89,7 @@ export class Options
             text.textContent = 'WebGL'
 
             const tooltip = element.querySelector('.js-tooltip')
-            tooltip.innerHTML = /* html */`Your browser is <strong>not compatible</strong> with WebGPU resulting in performance loss`
+            tooltip.innerHTML = /* html */translations[getCurrentLanguage()]?.options_webgpu_tt || 'Your browser is <strong>not compatible</strong> with WebGPU resulting in performance loss'
         }
     }
 
@@ -108,14 +108,14 @@ export class Options
                 element.classList.remove('is-danger')
                 
                 this.serverText.textContent = translations[lang]?.options_server_online || 'Online'
-                this.serverTooltip.innerHTML = /* html */`Enjoy the <strong>multiplayer</strong> features`
+                this.serverTooltip.innerHTML = /* html */translations[getCurrentLanguage()]?.options_server_online_tt || 'Enjoy the <strong>multiplayer</strong> features'
             }
             else
             {
                 element.classList.remove('is-success')
                 element.classList.add('is-danger')
                 this.serverText.textContent = translations[lang]?.options_server_offline || 'Offline'
-                this.serverTooltip.innerHTML = /* html */`Server offline`
+                this.serverTooltip.innerHTML = /* html */translations[getCurrentLanguage()]?.options_server_offline_tt || 'Server offline'
             }
         }
 

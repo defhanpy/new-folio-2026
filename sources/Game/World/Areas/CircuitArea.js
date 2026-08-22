@@ -10,6 +10,7 @@ import { alea } from 'seedrandom'
 import { InputFlag } from '../../InputFlag.js'
 import { Area } from './Area.js'
 import { timeToRaceString, timeToReadableString } from '../../utilities/time.js'
+import { getCurrentLanguage, translations } from '../../../i18n/LanguageToggle.js'
 
 export class CircuitArea extends Area
 {
@@ -868,7 +869,7 @@ export class CircuitArea extends Area
                     context.fillStyle = '#ff87a2'
                     context.textBaseline = 'middle'
                     context.textAlign = 'center'
-                    context.fillText('OFFLINE', resolution * 0.5, resolution * 0.5)
+                    context.fillText(translations[getCurrentLanguage()]?.circuit_canvas_offline || 'OFFLINE', resolution * 0.5, resolution * 0.5)
                 }
                 else if(scores.length === 0)
                 {
@@ -876,7 +877,7 @@ export class CircuitArea extends Area
                     context.fillStyle = '#ffffff'
                     context.textBaseline = 'middle'
                     context.textAlign = 'center'
-                    context.fillText('NO SCORE YET TODAY', resolution * 0.5, resolution * 0.5)
+                    context.fillText(translations[getCurrentLanguage()]?.circuit_canvas_no_score || 'NO SCORE YET TODAY', resolution * 0.5, resolution * 0.5)
                 }
                 else
                 {
@@ -1062,7 +1063,7 @@ export class CircuitArea extends Area
             {
                 this.resetTime.lastTimeDrawn = formatedTime
 
-                this.resetTime.finalFormatedTime = formatedTime === '' ? 'now' : `in ${formatedTime}`
+                this.resetTime.finalFormatedTime = formatedTime === '' ? (translations[getCurrentLanguage()]?.circuit_time_now || 'now') : (translations[getCurrentLanguage()]?.circuit_time_in || 'in {time}').replace('{time}', formatedTime)
                 this.resetTime.draw(this.resetTime.finalFormatedTime)
 
                 if(this.menu.instance.isOpen)

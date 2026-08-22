@@ -6,6 +6,7 @@ import gsap from 'gsap'
 import { Bubble } from './Bubble.js'
 import emojiRegex from 'emoji-regex'
 import { InputFlag } from '../InputFlag.js'
+import { t } from '../../i18n/LanguageToggle.js'
 
 export class Whispers
 {
@@ -340,7 +341,7 @@ export class Whispers
         this.menu.input.addEventListener('input', () =>
         {
             const sanatized = sanatize(this.menu.input.value, false, true, true)
-            this.menu.previewMessageText.textContent = sanatized.length ? sanatized : 'Your message here'
+            this.menu.previewMessageText.textContent = sanatized.length ? sanatized : t('whispers_preview', 'Your message here')
 
             if(this.menu.input.textContent !== sanatized)
                 this.menu.input.value = sanatized
@@ -363,7 +364,7 @@ export class Whispers
         this.menu.previewMessageText.addEventListener('blur', () =>
         {
             const sanatized = sanatize(this.menu.input.value, true, true, true)
-            this.menu.previewMessageText.textContent = sanatized !== '' ? sanatized : 'Your message here'
+            this.menu.previewMessageText.textContent = sanatized !== '' ? sanatized : t('whispers_preview', 'Your message here')
             updateGroup()
         })
 
@@ -382,7 +383,7 @@ export class Whispers
 
         this.menu.instance.events.on('closed', () =>
         {
-            this.menu.previewMessageText.textContent = 'Your message here'
+            this.menu.previewMessageText.textContent = t('whispers_preview', 'Your message here')
             this.menu.input.value = ''
             updateGroup()
             this.menu.inputFlag.close()

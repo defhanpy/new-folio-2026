@@ -81,8 +81,8 @@
         <div class="js-touch-buttons touch-buttons">
             <div class="js-overlay overlay"></div>
             <div class="list">
-                <button data-name="interact" class="js-button interact">Interact</button>
-                <button data-name="unstuck" class="js-button unstuck">Unstuck</button>
+                <button data-name="interact" class="js-button interact" data-i18n="touch_interact">Interact</button>
+                <button data-name="unstuck" class="js-button unstuck" data-i18n="touch_unstuck">Unstuck</button>
                 <button data-name="previous" class="js-button previous"></button>
                 <button data-name="next" class="js-button next"></button>
                 <button data-name="open" class="js-button open"></button>
@@ -174,7 +174,7 @@
                     </button>
 
                     <!-- Whispers -->
-                    <button class="js-navigation-item item" data-name="whispers" style="display:none">
+                    <button class="js-navigation-item item" data-name="whispers">
                         <div class="button-inner">
                             <div class="icon-container">
                                 <img src="ui/whispers/whisper-fill.svg" loading="lazy">
@@ -222,9 +222,9 @@
                         </div>
 
                         <!-- Whispers -->
-                        <div class="js-preview preview whispers-preview" style="display:none">
+                        <div class="js-preview preview whispers-preview">
                             <img class="background" src="ui/previews/whispers.webp" loading="lazy" draggable="false">
-                            <div class="js-preview-message message title"> <span class="js-text text" contenteditable="">Your message here</span><div class="js-flag flag"></div> </div>
+                            <div class="js-preview-message message title"> <span class="js-text text" contenteditable="" data-i18n="whispers_preview">Your message here</span><div class="js-flag flag"></div> </div>
                         </div>
 
                         <!-- Behind the scene -->
@@ -271,7 +271,7 @@
                                             <td>
                                                 <button class="js-quality-toggle quality-toggle button is-small has-tooltip">
                                                     <div class="tooltip" data-i18n="options_quality_tt">Toggles some effects</div>
-                                                    <span>Low</span>
+                                                    <span data-i18n="options_quality_low">Low</span>
                                                 </button>
                                             </td>
                                         </tr>
@@ -315,7 +315,7 @@
                                             <td>
                                                 <button class="js-server button is-small is-disabled has-tooltip">
                                                     <div class="js-tooltip tooltip"></div>
-                                                    <span>Pending</span>
+                                                    <span data-i18n="options_server_offline">Pending</span>
                                                 </button>
                                             </td>
                                         </tr>
@@ -533,42 +533,42 @@
                                     <div class="title" data-i18n="achievements_rewards">Rewards</div>
                                     <div class="rewards">
                                         <button class="js-reward reward has-tooltip" data-name="red" data-default>
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/red.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="orange">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/orange.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="white">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/white.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="black">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/black.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="flames">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/flames.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="abyssal">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip"><span data-i18n="achievements_unlock_at">Unlock at</span> <strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/abyssal.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
@@ -606,7 +606,7 @@
                                     </table>
 
                                     <p class="online-element reset">
-                                        Resets in <span class="js-reset-time reset-time"></span>
+                                        <span data-i18n="circuit_resets_in">Resets in</span> <span class="js-reset-time reset-time"></span>
                                     </p>
 
                                 </div>
@@ -624,7 +624,7 @@
                                         <svg class="icon icon-flag" class="none" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0.551758 1.7258C6.55166 -2.27398 11.0001 3.40978 19 1.40953L23 13.4096C15.5952 15.2611 11.6175 10.2589 6.30859 12.6762L8.44824 19.0941L6.55176 19.7269L0.551758 1.7258ZM5.26562 2.00328C4.68209 2.01685 4.07959 2.11674 3.42871 2.37242L6.16309 10.5746C7.17704 10.2014 8.1765 10.0274 9.17188 10.0043C10.8337 9.96566 12.395 10.3531 13.7764 10.7299C15.9783 11.3304 17.9741 11.9562 20.3564 11.806L17.6533 3.69664C13.9491 4.17921 11.0237 3.21654 8.72363 2.58922C7.3553 2.21603 6.29108 1.97952 5.26562 2.00328Z" fill="#ffffff"/>
                                         </svg>
-                                        <span>End</span>
+                                        <span data-i18n="circuit_end">End</span>
                                     </button>
                                 
                                     <button class="js-button-controls button">
@@ -639,11 +639,11 @@
                         </div>
 
                         <!-- Whispers -->
-                        <div class="js-content content whispers-content" style="display:none">
+                        <div class="js-content content whispers-content">
                             <div class="content-inner">
-                                <div class="title">Leave a whisper</div>
-                                <p class="text">Whispers are messages left by visitors.</p>
-                                <p class="text text-small text-faded">
+                                <div class="title" data-i18n="whispers_title">Leave a whisper</div>
+                                <p class="text" data-i18n="whispers_desc">Whispers are messages left by visitors.</p>
+                                <p class="text text-small text-faded" data-i18n="whispers_rules">
                                     - Everyone can see them<br />
                                     - New whispers remove old ones (max 30)<br />
                                     - One whisper per user<br />
@@ -652,7 +652,7 @@
                                     - Max 30 characters
                                 </p>
                                 <p class="offline-element text text-danger">
-                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> Server currently offline
+                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> <span data-i18n="whispers_offline">Server currently offline</span>
                                 </p>
                                 <form class="js-input-group input-group is-message" action="#">
                                     <div class="js-input-flag input-flag">
@@ -670,9 +670,9 @@
                                             <div class="js-flag-remove remove">
                                                 <img src="ui/remove.svg" loading="lazy">
                                             </div>
-                                            <input type="text" class="js-flag-search search" placeholder="Search…">
+                                            <input type="text" class="js-flag-search search" data-i18n-placeholder="search_placeholder" placeholder="Search…">
                                             <div class="js-no-result no-result">
-                                                No result
+                                                <span data-i18n="no_result">No result</span>
                                             </div>
                                             <div class="choices">
                                                 <div class="js-scroller scroller">
@@ -681,7 +681,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input class="js-input js-main-focus input-text" type="text" placeholder="Your message" maxlength="30" name="message"/>
+                                    <input class="js-input js-main-focus input-text" type="text" data-i18n-placeholder="whispers_input_placeholder" placeholder="Your message" maxlength="30" name="message"/>
                                     <button class="submit has-icon">
                                         <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.984 26.0434C11.087 26.0016 11.1916 25.9584 11.2975 25.914C12.9298 25.2289 14.998 24.1857 16.3708 22.8128C16.8477 22.3359 17.1994 21.573 17.4799 20.7863C17.7749 19.9587 18.0444 18.9447 18.2905 17.831C18.7834 15.6008 19.2022 12.8805 19.541 10.26C19.5427 10.2476 19.5443 10.2352 19.5459 10.2228C19.8659 12.7209 20.2775 15.3149 20.7957 17.4944C21.063 18.6186 21.3637 19.6547 21.7037 20.5201C22.0343 21.3616 22.4398 22.1422 22.963 22.6655C24.5715 24.2739 26.4382 25.3527 27.8827 26.0268C27.9024 26.036 27.922 26.0452 27.9416 26.0542C27.8074 26.1139 27.6701 26.1761 27.5304 26.2406C26.0017 26.9468 24.0681 27.9906 22.8116 29.2618C21.4879 30.6008 20.4455 32.6674 19.7513 34.3012C19.698 34.4266 19.6465 34.5502 19.5967 34.6716C19.5466 34.5489 19.4948 34.424 19.4411 34.2972C18.7484 32.6615 17.7049 30.5918 16.3708 29.2577C15.0363 27.9233 12.966 26.8799 11.3298 26.1873C11.2129 26.1378 11.0975 26.0899 10.984 26.0434Z" stroke="#FFCECA" stroke-width="2"/>
@@ -753,16 +753,16 @@
                         </button>
 
                         <div class="your-time">
-                            Your time
+                            <span data-i18n="circuit_your_time">Your time</span>
                             <br /><span class="js-time value">00:00:000</span>
                         </div>
 
                         <p class="offline-element text text-danger">
-                            <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> Server currently offline. Scores can't be saved.
+                            <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> <span data-i18n="circuit_offline">Server currently offline. Scores can't be saved.</span>
                         </p>
 
                         <p class="not-top-10 text">
-                            Sorry, you didn't make it to the top 10.
+                            <span data-i18n="circuit_not_top_10">Sorry, you didn't make it to the top 10.</span>
                         </p>
 
                         <div class="horizontal-group">
@@ -783,9 +783,9 @@
                                         <div class="js-flag-remove remove">
                                             <img src="ui/remove.svg" loading="lazy">
                                         </div>
-                                        <input type="text" class="js-flag-search search" placeholder="Search…">
+                                        <input type="text" class="js-flag-search search" data-i18n-placeholder="search_placeholder" placeholder="Search…">
                                         <div class="js-no-result no-result">
-                                            No result
+                                            <span data-i18n="no_result">No result</span>
                                         </div>
                                         <div class="choices">
                                             <div class="js-scroller scroller">
@@ -796,19 +796,19 @@
                                 </div>
                                 <input class="js-input js-main-focus input-text" type="text" placeholder="---" maxlength="3" />
                                 <button class="submit has-text">
-                                    Submit
+                                    <span data-i18n="circuit_submit">Submit</span>
                                 </button>
                             </form>
 
                             <div class="or">
-                                or
+                                <span data-i18n="circuit_or">or</span>
                             </div>
 
                             <button class="js-button-restart button">
                                 <svg class="icon icon-restart" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17 5L10 10V6C5.58172 6 2 9.58172 2 14C2 18.4183 5.58172 22 10 22C14.4183 22 18 18.4183 18 14H20C20 19.5228 15.5228 24 10 24C4.47715 24 0 19.5228 0 14C0 8.47715 4.47715 4 10 4V0L17 5Z" fill="#ffffff"/>
                                 </svg>
-                                Restart
+                                <span data-i18n="circuit_restart_btn">Restart</span>
                             </button>
 
                         </div>

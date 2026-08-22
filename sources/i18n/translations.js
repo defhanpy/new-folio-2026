@@ -222,6 +222,40 @@ export const translations = {
         modal_discord_private_title: "Direct Contact",
         modal_discord_private_desc: "Reach out to me directly for inquiries.",
         modal_discord_private_btn: "Open Discord",
+
+        // Touch buttons
+        touch_interact: "Interact",
+        touch_unstuck: "Unstuck",
+
+        // Whispers extras
+        whispers_preview: "Your message here",
+        whispers_rules: "- Everyone can see them<br />- New whispers remove old ones (max 30)<br />- One whisper per user<br />- Choose a flag<br />- No slur!<br />- Max 30 characters",
+        whispers_input_placeholder: "Your message",
+
+        // Search / No result
+        search_placeholder: "Search…",
+        no_result: "No result",
+
+        // Circuit extras
+        circuit_resets_in: "Resets in",
+        circuit_end: "End",
+        circuit_not_top_10: "Sorry, you didn't make it to the top 10.",
+        circuit_submit: "Submit",
+        circuit_or: "or",
+        circuit_restart_btn: "Restart",
+        circuit_canvas_offline: "OFFLINE",
+        circuit_canvas_no_score: "NO SCORE YET TODAY",
+        circuit_time_now: "now",
+        circuit_time_in: "in {time}",
+
+        // Options extras
+        options_webgpu_tt: "Your browser is <strong>not compatible</strong> with WebGPU resulting in performance loss",
+        options_server_online_tt: "Enjoy the <strong>multiplayer</strong> features",
+        options_server_offline_tt: "Server offline",
+        options_quality_low: "Low",
+
+        // Lab
+        lab_verified: "Verified Certificate",
     },
 
     id: {
@@ -447,5 +481,39 @@ export const translations = {
         modal_discord_private_title: "Pesan Langsung",
         modal_discord_private_desc: "Hubungi aku langsung untuk diskusi atau kolaborasi.",
         modal_discord_private_btn: "Buka Discord",
+
+        // Touch buttons
+        touch_interact: "Interaksi",
+        touch_unstuck: "Bebaskan",
+
+        // Whispers extras
+        whispers_preview: "Pesan kamu di sini",
+        whispers_rules: "- Semua orang bisa melihatnya<br />- Pesan baru menggantikan yang lama (maks 30)<br />- Satu pesan per pengunjung<br />- Pilih bendera<br />- Tidak boleh kasar!<br />- Maks 30 karakter",
+        whispers_input_placeholder: "Pesan kamu",
+
+        // Search / No result
+        search_placeholder: "Cari…",
+        no_result: "Tidak ada hasil",
+
+        // Circuit extras
+        circuit_resets_in: "Reset dalam",
+        circuit_end: "Selesai",
+        circuit_not_top_10: "Maaf, kamu belum masuk 10 besar.",
+        circuit_submit: "Kirim",
+        circuit_or: "atau",
+        circuit_restart_btn: "Ulangi",
+        circuit_canvas_offline: "OFFLINE",
+        circuit_canvas_no_score: "BELUM ADA SKOR",
+        circuit_time_now: "sekarang",
+        circuit_time_in: "dalam {time}",
+
+        // Options extras
+        options_webgpu_tt: "Browser kamu <strong>tidak kompatibel</strong> dengan WebGPU, performa akan berkurang",
+        options_server_online_tt: "Nikmati fitur <strong>multiplayer</strong>",
+        options_server_offline_tt: "Server offline",
+        options_quality_low: "Rendah",
+
+        // Lab
+        lab_verified: "Sertifikat Terverifikasi",
     }
 }

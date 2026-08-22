@@ -9,3 +9,4 @@ dist
 !static/sounds/music/*.wav
 certification-images/
 project-images/
+server/

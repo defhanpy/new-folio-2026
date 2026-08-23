@@ -366,22 +366,71 @@ export class InteractivePoints
 
         item.updateLabel = (newText) =>
         {
+            console.log(`[InteractivePoint] updateLabel called: key=${item.translationKey}, newText=${newText}, lang=${getCurrentLanguage()}`)
             item.context.font = item.font
             const newTextSize = item.context.measureText(newText)
             const newWidth = Math.ceil(newTextSize.width) + item.textPaddingLeft + item.textPaddingRight + 2
-            item.canvas.width = newWidth
-            item.canvas.height = item.height
 
-            item.context.fillStyle = '#000000'
-            item.context.fillRect(0, 0, newWidth, item.height)
+            // Create a new canvas to draw the text
+            const newCanvas = document.createElement('canvas')
+            newCanvas.width = newWidth
+            newCanvas.height = item.height
+            const newContext = newCanvas.getContext('2d')
 
-            item.context.font = item.font
-            item.context.fillStyle = '#ffffff'
-            item.context.textAlign = 'start'
-            item.context.textBaseline = 'middle'
-            item.context.fillText(newText, item.textPaddingLeft + 1, item.height * 0.5 + item.textOffsetVertical)
+            newContext.fillStyle = '#000000'
+            newContext.fillRect(0, 0, newWidth, item.height)
 
-            item.labelTexture.needsUpdate = true
+            newContext.font = item.font
+            newContext.fillStyle = '#ffffff'
+            newContext.textAlign = 'start'
+            newContext.textBaseline = 'middle'
+            newContext.fillText(newText, item.textPaddingLeft + 1, item.height * 0.5 + item.textOffsetVertical)
+
+            // Update canvas and context references
+            item.canvas = newCanvas
+            item.context = newContext
+
+            // Save old references to dispose later
+            const oldTexture = item.labelTexture
+            const oldMaterial = item.label.material
+
+            // Create new texture with correct dimensions
+            const newTexture = new THREE.Texture(newCanvas)
+            newTexture.minFilter = THREE.NearestFilter
+            newTexture.magFilter = THREE.NearestFilter
+            newTexture.generateMipmaps = false
+            newTexture.needsUpdate = true
+            item.labelTexture = newTexture
+
+            // Create new node material referencing the new texture
+            const newMaterial = new THREE.MeshLambertNodeMaterial({ transparent: true, depthTest: true })
+            newMaterial.outputNode = Fn(() =>
+            {
+                const _uv = vec2(
+                    uv().x.sub(labelOffset),
+                    uv().y
+                )
+                const text = texture(newTexture, _uv).r
+                
+                // Discard
+                _uv.x.greaterThan(1).discard()
+                _uv.x.lessThan(0).discard()
+
+                const foggedBackColor = this.game.fog.strength.mix(this.backColor, this.game.fog.color)
+                const finalColor = mix(foggedBackColor, this.frontColor, text)
+                return vec4(vec3(finalColor), 1)
+            })()
+
+            // Update mesh material
+            item.label.material = newMaterial
+
+            // Dispose old resources after a short timeout to ensure smooth transition
+            setTimeout(() =>
+            {
+                oldTexture.dispose()
+                oldMaterial.dispose()
+            }, 100)
+
             item.label.scale.x = 0.75 * newWidth / item.height
             item.label.position.x = item.align === InteractivePoints.ALIGN_LEFT ? 0 : - item.label.scale.x
         }

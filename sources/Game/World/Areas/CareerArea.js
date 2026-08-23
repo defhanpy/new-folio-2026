@@ -116,7 +116,8 @@ export class CareerArea extends Area
                     const emissiveColor = baseColor.div(luminance(baseColor)).mul(1.7)
 
                     const maskColor = color('#251f2b')
-                    const finalColor = mix(maskColor, emissiveColor, textureColor.r)
+                    const titleColor = mix(maskColor, emissiveColor, textureColor.r)
+                    const finalColor = mix(titleColor, color('#ffffff'), textureColor.g)
                     
                     return vec4(finalColor, alpha)
                 })()

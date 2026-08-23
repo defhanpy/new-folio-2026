@@ -1031,9 +1031,11 @@ export class ProjectsArea extends Area
         // Open
         this.url.open = () =>
         {
-            if(this.navigation.current.url)
+            const targetUrl = this.navigation.current.url
+            if(targetUrl && targetUrl !== 'Internal Use Only' && targetUrl !== '#')
             {
-                window.open(this.navigation.current.url, '_blank')
+                const absoluteUrl = targetUrl.startsWith('http://') || targetUrl.startsWith('https://') ? targetUrl : `https://${targetUrl}`
+                window.open(absoluteUrl, '_blank')
             }
         }
     }

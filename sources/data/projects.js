@@ -1,162 +1,124 @@
 export default [
     {
-        title: 'Three.js Journey',
-        titleSmall: [ 'Three.js', 'Journey' ],
-        url: 'https://threejs-journey.com',
+        title: 'API Development',
+        titleSmall: [ 'API', 'Development' ],
+        url: 'Internal Use Only',
         attributes:
         {
-            role: [ 'developer', 'formater' ],
-            with: [ 'Hervé Studio', 'Bonhomme Paris' ]
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [ 'fwa' ], // 'awwwards', 'fwa', 'cssda'
         images:
         [
-            'threejs-journey-1.ktx',
-            'threejs-journey-2.ktx',
-            'threejs-journey-3.ktx',
-            'threejs-journey-4.ktx',
-            'threejs-journey-5.ktx',
-        ]
-    },
-    // {
-    //     title: 'Chartogne Taillet',
-    //     titleSmall: [ 'Chartogne', 'Taillet' ],
-    //     url: 'https://chartogne-taillet.com',
-    //     attributes:
-    //     {
-    //         at: 'Immersive Garden',
-    //         role: 'WebGL developer',
-    //         with: 'Rémi Tran'
-    //     },
-    //     distinctions: [ 'awwwards', 'cssda', 'fwa' ], // 'awwwards', 'fwa', 'cssda'
-    //     images:
-    //     [
-    //         'chartogne-taillet-1.ktx',
-    //         'chartogne-taillet-2.ktx',
-    //         'chartogne-taillet-3.ktx',
-    //     ]
-    // },
-    {
-        title: 'Bonhomme | 10 ans',
-        titleSmall: [ 'Bonhomme', '10 ans' ],
-        url: 'https://anniversary.bonhommeparis.com',
-        attributes:
-        {
-            role: 'WebGL developer',
-            with: 'Bonhomme Paris'
-        },
-        distinctions: [ 'awwwards', 'fwa' ],
-        images:
-        [
-            'bonhomme-10-ans-1.ktx',
-            'bonhomme-10-ans-2.ktx',
-            'bonhomme-10-ans-3.ktx',
+            'api-dev-1.ktx'
         ]
     },
     {
-        title: 'Madbox',
-        titleSmall: [ 'Madbox' ],
-        url: 'https://madbox.io',
+        title: 'Perumdam Tirta Pandhalungan',
+        titleSmall: [ 'Perumdam', 'T. Pandhalungan' ],
+        url: 'Internal Use Only',
         attributes:
         {
-            role: 'WebGL developer',
-            at: 'Hervé Studio',
-            with: 'Lei Xing'
+            role: [ 'Fullstack' ]
         },
-        distinctions: [ 'awwwards' ],
         images:
         [
-            'madbox-1.ktx',
-            'madbox-2.ktx',
-            'madbox-3.ktx',
+            'perumdam-1.ktx'
         ]
     },
     {
-        title: 'Luni',
-        titleSmall: [ 'Luni' ],
-        url: 'https://www.luni.app',
+        title: 'PMB ITSM',
+        titleSmall: [ 'PMB', 'ITSM' ],
+        url: 'https://pmb.itsm.ac.id',
         attributes:
         {
-            role: 'WebGL developer',
-            at: 'Hervé Studio',
-            with: 'Loïc Belaidremesal'
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [ 'awwwards', 'fwa' ],
         images:
         [
-            'luni-1.ktx',
-            'luni-2.ktx',
-            'luni-3.ktx',
-            'luni-4.ktx',
+            'pmb-mandala-1.ktx',
+            'pmb-mandala-2.ktx'
         ]
     },
     {
-        title: 'Scout',
-        titleSmall: [ 'Scout' ],
-        url: 'https://scout-omega.vercel.app',
+        title: 'Sistem Terpadu ITSM',
+        titleSmall: [ 'Sistem', 'Terpadu', 'ITSM' ],
+        url: 'https://sipadu.itsm.ac.id',
         attributes:
         {
-            role: 'WebGL developer',
-            at: 'Hervé Studio'
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [  ],
         images:
         [
-            'scout-1.ktx',
-            'scout-2.ktx',
-            'scout-3.ktx',
+            'sipadu-1.ktx',
+            'sipadu-2.ktx'
         ]
     },
     {
-        title: 'Prior Holdings',
-        titleSmall: [ 'Prio', 'Holdings' ],
-        url: 'https://prior.co.jp/discover/en',
+        title: 'PMB UIJ',
+        titleSmall: [ 'PMB', 'UIJ' ],
+        url: 'https://pmb.uij.ac.id',
         attributes:
         {
-            role: [ 'Front developer', 'WebGL developer' ],
-            at: 'Immersive Garden'
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [ 'awwwards', 'cssda', 'fwa' ],
         images:
         [
-            'prior-1.ktx',
-            'prior-2.ktx',
-            'prior-3.ktx',
+            'pmb-uij-1.ktx',
+            'pmb-uij-2.ktx'
         ]
     },
     {
-        title: 'Orano',
-        titleSmall:  'Orano',
-        url: 'https://www.orano.group/experience/innovation/en',
+        title: 'Sistem Terpadu UIJ',
+        titleSmall: [ 'Sistem', 'Terpadu', 'UIJ' ],
+        url: 'https://sister.uij.ac.id',
         attributes:
         {
-            role: [ 'Front developer', 'WebGL developer' ],
-            at: 'Immersive Garden'
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [ 'awwwards', 'cssda', 'fwa' ],
         images:
         [
-            'orano-1.ktx',
-            'orano-2.ktx',
-            'orano-3.ktx',
+            'sister-1.ktx',
+            'sister-2.ktx'
         ]
     },
     {
-        title: 'Citrix / Redbull',
-        titleSmall: ['Citrix', 'Redbull'],
-        url: 'https://thenewmobileworkforce.imm-g-prod.com',
+        title: 'CV Madju Jaya',
+        titleSmall: [ 'CV', 'Madju Jaya' ],
+        url: 'https://madjujaya.com',
         attributes:
         {
-            role: [ 'WebGL developer' ],
-            at: 'Immersive Garden',
-            with: [ 'Damien Doussaud', 'Quentin Leclercq' ]
+            role: [ 'Backend Engineer' ]
         },
-        distinctions: [ 'awwwards', 'cssda', 'fwa' ],
         images:
         [
-            'citrix-redbull-1.ktx',
-            'citrix-redbull-2.ktx',
-            'citrix-redbull-3.ktx',
+            'madjujaya-1.ktx',
+            'madjujaya-2.ktx'
+        ]
+    },
+    {
+        title: 'CV Semangat Baru Raharja',
+        titleSmall: [ 'CV', 'SBR' ],
+        url: 'https://sbrdistributor.com',
+        attributes:
+        {
+            role: [ 'Project Manager' ]
+        },
+        images:
+        [
+            'sbr-1.ktx'
+        ]
+    },
+    {
+        title: 'SRSSDS Kalisanen',
+        titleSmall: [ 'SRSSDS', 'Kalisanen' ],
+        url: 'https://kalisanen.com',
+        attributes:
+        {
+            role: [ 'Backend Engineer' ]
+        },
+        images:
+        [
+            'rss-1.ktx'
         ]
     }
 ]

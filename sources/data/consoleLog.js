@@ -48,28 +48,29 @@ const text = `
 ╚═══════════════════════╝
 
 ╔═ Three.js Journey ════╗
-║ If you want to learn Three.js, I got you covered with this huge course.
+║ If you want to learn Three.js, check out Bruno Simon's official course:
 ║ https://threejs-journey.com/
 ║ It contains everything you need to start building awesome stuff with Three.js (and much more).
 ╚═══════════════════════╝
 
 ╔═ Devlogs ═════════════╗
-║ I’ve been making devlogs since the very start of this portfolio
-║ and you can find them all on my Youtube channel.
+║ Bruno Simon has documented the creation of the original portfolio
+║ in his Youtube devlogs:
 ║ https://www.youtube.com/@BrunoSimon
 ╚═══════════════════════╝
 
 ╔═ Source code ═════════╗
-║ The code is available on GitHub under MIT license. Even the Blender files are there, so have fun!
+║ The base engine source code is available on GitHub under MIT license:
 ║ https://github.com/brunosimon/folio-2025
-║ For security reasons, I’m not sharing the server code, but the portfolio works without it.
+║ You can find my customized version here:
+║ https://github.com/defhanpy
 ╚═══════════════════════╝
 
 ╔═ Musics ══════════════╗
-║ The music you hear was made especially for this portfolio by the awesome Kounine (Linktree).
+║ The music was created by the awesome Kounine (Linktree).
 ║ https://linktr.ee/Kounine
-║ They are now under CC0 license, meaning you can do whatever you want with them!
-║ Download them here.
+║ They are under CC0 license, meaning you can do whatever you want with them!
+║ Download them here:
 ║ https://github.com/brunosimon/folio-2025/tree/main/static/sounds/musics
 ╚═══════════════════════╝
 

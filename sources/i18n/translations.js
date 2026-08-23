@@ -43,7 +43,7 @@ export const translations = {
         options_server_online: "Online",
 
         // Controls
-        controls_title: "Controls",
+        controls_title: "CONTROL",
         controls_tab_keyboard: "Keyboard",
         controls_tab_gamepad: "Gamepad",
         controls_tab_touch: "Touch",
@@ -178,24 +178,24 @@ export const translations = {
         whispers_placeholder: "Your message",
 
         // Map Pins
-        map_title: "Map",
+        map_title: "MAP",
         map_achievements: "Achievements",
         map_altar: "Altar",
         map_tech_stack: "Tech Stack",
         map_bowling: "Bowling",
-        map_career: "Career",
+        map_career: "JOURNEY",
         map_circuit: "Circuit",
         map_cookie: "Cookie",
-        map_certifications: "Certifications",
+        map_certifications: "AWARDS",
         map_landing: "Landing",
         map_projects: "Projects",
         map_social: "Social",
-        map_time_machine: "Time Machine",
+        map_time_machine: "PORTFOLIO",
 
         // Portals / 3D Sign Labels
         portal_projects: "Projects",
-        portal_certifications: "Certifications",
-        portal_career: "Career",
+        portal_certifications: "AWARDS",
+        portal_career: "JOURNEY",
         portal_tech_stack: "Tech Stack",
         portal_achievements: "Achievements",
         portal_circuit: "Circuit",
@@ -207,7 +207,7 @@ export const translations = {
         portal_horn: "Horn",
         portal_physics: "Physics",
         portal_about: "About",
-        portal_time_machine: "2019 Portfolio",
+        portal_time_machine: "Visit Portfolio",
         portal_easter: "Easter",
 
         // Touch buttons
@@ -302,7 +302,7 @@ export const translations = {
         options_server_online: "Online",
 
         // Controls
-        controls_title: "Panduan Kontrol",
+        controls_title: "KONTROL",
         controls_tab_keyboard: "Keyboard",
         controls_tab_gamepad: "Gamepad",
         controls_tab_touch: "Sentuh",
@@ -437,24 +437,24 @@ export const translations = {
         whispers_placeholder: "Pesan kamu",
 
         // Map Pins
-        map_title: "Peta Dunia",
+        map_title: "PETA",
         map_achievements: "Pencapaian",
         map_altar: "Altar",
         map_tech_stack: "Tech Stack",
         map_bowling: "Bowling",
-        map_career: "Karir",
+        map_career: "PERJALANAN",
         map_circuit: "Sirkuit",
         map_cookie: "Kukis",
-        map_certifications: "Sertifikasi",
+        map_certifications: "PENGHARGAAN",
         map_landing: "Awal",
         map_projects: "Proyek",
         map_social: "Sosial",
-        map_time_machine: "Mesin Waktu",
+        map_time_machine: "PORTOFOLIO",
 
         // Portals / 3D Sign Labels
         portal_projects: "Proyek",
-        portal_certifications: "Sertifikasi",
-        portal_career: "Karir",
+        portal_certifications: "PENGHARGAAN",
+        portal_career: "PERJALANAN",
         portal_tech_stack: "Tech Stack",
         portal_achievements: "Pencapaian",
         portal_circuit: "Sirkuit",
@@ -462,11 +462,11 @@ export const translations = {
         portal_bowling_score: "Skor",
         portal_bowling_pins: "Pin",
         portal_cookies: "Terima",
-        portal_spawn_fan: "Munculkan Fan",
+        portal_spawn_fan: "Cuma Kipas",
         portal_horn: "Klakson",
         portal_physics: "Fisika",
         portal_about: "Tentang",
-        portal_time_machine: "Portfolio 2019",
+        portal_time_machine: "Kunjungi Portofolio",
         portal_easter: "Paskah",
 
         // Touch buttons

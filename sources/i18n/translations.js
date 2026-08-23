@@ -13,12 +13,12 @@ export const translations = {
         nav_tech_stack: "Tech Stack",
 
         // Home
-        home_title: "Ilhan's Home",
-        home_welcome: "Welcome!",
-        home_intro: "My name is <strong>Ilhan Awafi</strong>, and I'm a <strong>Backend Engineer and AI Enthusiast</strong>.",
-        home_desc: "This is my interactive 3D portfolio. Please drive around to learn more about me, explore my projects, and discover the world.",
-        home_fun: "And don't break anything!",
-        home_credits: "Portfolio base engine created by Bruno Simon.",
+        home_title: "Welcome to My World",
+        home_welcome: "Hey there!",
+        home_intro: "I'm <strong>Ilhan Awafi</strong>, a <strong>Backend Engineer & AI Enthusiast</strong> who loves building things that live on the internet.",
+        home_desc: "This is my interactive 3D portfolio. Drive around to explore my projects, certifications, and the tech I work with.",
+        home_fun: "And try not to crash!",
+        home_credits: "Based on Bruno Simon's 3D Folio Engine.",
 
         // Options
         options_title: "Options",
@@ -272,12 +272,12 @@ export const translations = {
         nav_tech_stack: "Tech Stack",
 
         // Home
-        home_title: "Beranda Ilhan",
-        home_welcome: "Selamat Datang!",
-        home_intro: "Namaku <strong>Ilhan Awafi</strong>, seorang <strong>Backend Engineer dan AI Enthusiast</strong>.",
-        home_desc: "Ini adalah portfolio 3D interaktif milikku. Silakan kelilingi dunia ini dengan mobilmu untuk melihat proyek, pengalaman, dan rahasia tersembunyi.",
-        home_fun: "Dan hati-hati jangan sampai merusak barang ya!",
-        home_credits: "Base engine portfolio dibuat oleh Bruno Simon.",
+        home_title: "Selamat Datang di Duniaku",
+        home_welcome: "Halo!",
+        home_intro: "Aku <strong>Ilhan Awafi</strong>, seorang <strong>Backend Engineer & AI Enthusiast</strong> yang suka membangun sesuatu yang hidup di internet.",
+        home_desc: "Ini adalah portfolio 3D interaktifku. Jelajahi proyek, sertifikasi, dan teknologi yang aku gunakan.",
+        home_fun: "Dan jangan nabrak ya!",
+        home_credits: "Berbasis mesin 3D Folio dari Bruno Simon.",
 
         // Options
         options_title: "Pengaturan",

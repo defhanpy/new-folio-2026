@@ -222,6 +222,13 @@ export class Whispers
             {
                 item.available = true
 
+                // Clear bubble if this was the closest whisper
+                if(item === this.bubble.closest)
+                {
+                    this.bubble.closest = null
+                    this.bubble.instance.hide()
+                }
+
                 const dummy = { value: 1 }
                 gsap.to(
                     dummy,

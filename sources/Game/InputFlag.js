@@ -51,20 +51,9 @@ export class InputFlag
         if(localCountryCode)
             countryCode = localCountryCode
 
+        // Default to Indonesia
         if(countryCode === '')
-        {
-            const locale = Intl.DateTimeFormat().resolvedOptions().locale
-            
-            if(locale)
-            {
-                const localeSplit = locale.split('-')
-
-                if(localeSplit.length)
-                {
-                    countryCode = localeSplit[localeSplit.length - 1].toLowerCase()
-                }
-            }
-        }
+            countryCode = 'id'
 
         if(countryCode !== '')
         {

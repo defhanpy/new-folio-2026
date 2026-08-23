@@ -169,7 +169,6 @@ export const translations = {
         tech_other: "Architectures & Paradigms",
         tech_other_list: "RESTful APIs, WebSockets, IoT Architecture, Microservices",
         tech_signature: "— Ilhan Awafi",
-        tech_credits: "Based on Bruno Simon's 3D Folio Engine.",
 
         // Whispers
         whispers_title: "Leave a whisper",
@@ -277,7 +276,7 @@ export const translations = {
         home_intro: "Aku <strong>Ilhan Awafi</strong>, seorang <strong>Backend Engineer & AI Enthusiast</strong> yang suka membangun sesuatu yang hidup di internet.",
         home_desc: "Ini adalah portfolio 3D interaktifku. Jelajahi proyek, sertifikasi, dan teknologi yang aku gunakan.",
         home_fun: "Dan jangan nabrak ya!",
-        home_credits: "Berbasis mesin 3D Folio dari Bruno Simon.",
+        home_credits: "Berdasarkan mesin 3D Folio dari Bruno Simon.",
 
         // Options
         options_title: "Pengaturan",
@@ -428,7 +427,6 @@ export const translations = {
         tech_other: "Arsitektur & Paradigma",
         tech_other_list: "RESTful APIs, WebSockets, Arsitektur IoT, Microservices",
         tech_signature: "— Ilhan Awafi",
-        tech_credits: "Base engine 3D berbasis karya Bruno Simon.",
 
         // Whispers
         whispers_title: "Tinggalkan Pesan",

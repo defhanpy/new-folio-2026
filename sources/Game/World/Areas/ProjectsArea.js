@@ -1085,6 +1085,10 @@ export class ProjectsArea extends Area
             {
                 this.distinctions.status = 'visible'
 
+                // Skip if project has no distinctions
+                if(!this.navigation.current.distinctions)
+                    return
+
                 let i = 0
                 const positions = this.distinctions.positions[this.navigation.current.distinctions.length - 1]
                 for(const name of this.navigation.current.distinctions)

@@ -10,3 +10,4 @@ dist
 certification-images/
 project-images/
 server/
+scripts/rebuild-favicons.cjs

@@ -1,0 +1,43 @@
+# Ilhan Awafi (defhanpy)
+
+## About
+Ilhan Awafi, known as defhanpy, is a Backend Engineer and Fullstack Developer specializing in scalable web applications, API development, and 3D interactive experiences.
+
+## Professional Profile
+- **Name**: Ilhan Awafi
+- **Username**: defhanpy
+- **Role**: Backend Engineer & Fullstack Developer
+- **Website**: https://defhanpy.dev/
+- **Agency**: Defhanpy Agency (https://agency.defhanpy.dev)
+- **Portfolio**: https://portfolio.defhanpy.dev
+
+## Technical Expertise
+- **Backend**: Python, Go, Laravel, PHP, Node.js
+- **Frontend**: JavaScript, Three.js, WebGL, React
+- **Specializations**: API Development, IoT, 3D Web Experiences
+- **Focus**: Scalable systems, interactive portfolios, backend architecture
+
+## Projects
+Portfolio features an immersive 3D interactive experience built with Three.js, showcasing:
+- Interactive project galleries
+- Professional certifications and achievements
+- Career timeline and experience
+- Tech stack visualization
+- Creative 3D world navigation
+
+## Contact & Social
+- **GitHub**: https://github.com/defhanpy
+- **LinkedIn**: https://www.linkedin.com/in/ilhanawafi/
+- **Instagram**: https://www.instagram.com/defhanpy/
+- **X (Twitter)**: https://x.com/defhanpy
+- **TikTok**: https://www.tiktok.com/@defhanpy
+
+## Defhanpy Agency
+Software development agency founded by Ilhan Awafi, offering:
+- Backend development and API architecture
+- Fullstack web application development
+- 3D interactive web experiences
+- System design and scalability consulting
+
+## Keywords
+Backend Engineer, Fullstack Developer, Python Developer, Go Developer, Laravel, Three.js, WebGL, API Development, IoT, 3D Portfolio, Interactive Web, defhanpy, Ilhan Awafi

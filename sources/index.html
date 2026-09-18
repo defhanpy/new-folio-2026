@@ -32,17 +32,42 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ilhan Awafi",
-      "alternateName": "defhanpy",
-      "url": "https://defhanpy.dev/",
-      "jobTitle": "Backend Engineer & Fullstack Developer",
-      "sameAs": [
-        "https://github.com/defhanpy",
-        "https://www.linkedin.com/in/ilhanawafi/",
-        "https://www.instagram.com/defhanpy/",
-        "https://x.com/defhanpy",
-        "https://www.tiktok.com/@defhanpy"
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Ilhan Awafi",
+          "alternateName": "defhanpy",
+          "url": "https://defhanpy.dev/",
+          "jobTitle": "Backend Engineer & Fullstack Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Defhanpy Agency"
+          },
+          "sameAs": [
+            "https://agency.defhanpy.dev",
+            "https://portfolio.defhanpy.dev",
+            "https://github.com/defhanpy",
+            "https://www.linkedin.com/in/ilhanawafi/",
+            "https://www.instagram.com/defhanpy/",
+            "https://x.com/defhanpy",
+            "https://www.tiktok.com/@defhanpy"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "Defhanpy Agency",
+          "url": "https://agency.defhanpy.dev",
+          "founder": {
+            "@type": "Person",
+            "name": "Ilhan Awafi"
+          },
+          "sameAs": [
+            "https://agency.defhanpy.dev",
+            "https://portfolio.defhanpy.dev",
+            "https://github.com/defhanpy",
+            "https://www.linkedin.com/in/ilhanawafi/"
+          ]
+        }
       ]
     }
     </script>

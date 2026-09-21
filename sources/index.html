@@ -35,17 +35,31 @@
       "@graph": [
         {
           "@type": "Person",
+          "@id": "https://defhanpy.dev/#person",
           "name": "Ilhan Awafi",
-          "alternateName": "defhanpy",
+          "alternateName": ["defhanpy", "Defhanpy"],
           "url": "https://defhanpy.dev/",
-          "jobTitle": "Backend Engineer & Fullstack Developer",
+          "jobTitle": "Backend Engineer & Database Administrator",
           "worksFor": {
             "@type": "Organization",
-            "name": "Defhanpy Agency"
+            "@id": "https://agency.defhanpy.dev/#organization",
+            "name": "Defhanpy Agency",
+            "url": "https://agency.defhanpy.dev"
           },
+          "knowsAbout": [
+            "Backend Engineering",
+            "Database Administration",
+            "PostgreSQL",
+            "Laravel",
+            "Go",
+            "Python",
+            "API Design",
+            "System Architecture"
+          ],
           "sameAs": [
-            "https://agency.defhanpy.dev",
+            "https://defhanpy.dev",
             "https://portfolio.defhanpy.dev",
+            "https://agency.defhanpy.dev",
             "https://github.com/defhanpy",
             "https://www.linkedin.com/in/ilhanawafi/",
             "https://www.instagram.com/defhanpy/",
@@ -55,15 +69,17 @@
         },
         {
           "@type": "Organization",
+          "@id": "https://agency.defhanpy.dev/#organization",
           "name": "Defhanpy Agency",
           "url": "https://agency.defhanpy.dev",
           "founder": {
             "@type": "Person",
-            "name": "Ilhan Awafi"
+            "@id": "https://defhanpy.dev/#person"
           },
           "sameAs": [
-            "https://agency.defhanpy.dev",
+            "https://defhanpy.dev",
             "https://portfolio.defhanpy.dev",
+            "https://agency.defhanpy.dev",
             "https://github.com/defhanpy",
             "https://www.linkedin.com/in/ilhanawafi/"
           ]

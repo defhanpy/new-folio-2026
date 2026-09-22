@@ -7,7 +7,7 @@ Ilhan Awafi, known as defhanpy, is a Backend Engineer and Fullstack Developer sp
 - **Name**: Ilhan Awafi
 - **Username**: defhanpy
 - **Role**: Backend Engineer & Fullstack Developer
-- **Website**: https://defhanpy.dev/
+- **Website**: https://www.defhanpy.dev/
 - **Agency**: Defhanpy Agency (https://agency.defhanpy.dev)
 - **Portfolio**: https://portfolio.defhanpy.dev
 
